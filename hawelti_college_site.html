@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hawelti Axum Polytechnic College</title>
+  <meta name="description" content="Hawelti Axum Polytechnic College — TVET programs, departments, short-term community partnerships." />
+  <style>
+    :root{--accent:#0b5cff;--muted:#6b7280;--bg:#f7f9fc;--card:#ffffff;--radius:12px;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f1724;line-height:1.45}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{background:linear-gradient(90deg, rgba(11,92,255,0.06), rgba(11,92,255,0.02));backdrop-filter:blur(4px);}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand img{height:64px;width:64px;object-fit:contain;border-radius:10px;background:#fff;padding:6px;box-shadow:0 2px 6px rgba(12,20,40,0.06)}
+    .brand h1{font-size:18px;margin:0;font-weight:800}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    nav a{color:var(--muted);text-decoration:none;font-weight:700}
+    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center;padding:36px 0}
+    .hero-card{background:var(--card);padding:28px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(9,12,28,0.06)}
+    .hero h2{margin:0 0 10px;font-size:26px}
+    .muted{color:var(--muted);}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(10,15,30,0.04)}
+    .card h3{margin:0 0 8px}
+
+    .departments{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:16px}
+    .dept{display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:10px;background:#fff}
+    .dept img{width:84px;height:64px;object-fit:cover;border-radius:8px;flex-shrink:0}
+    .dept .meta{font-size:14px}
+
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:12px}
+    .gallery img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .contact form{display:grid;gap:8px}
+    input, textarea{padding:10px;border-radius:8px;border:1px solid #e6eefc}
+    button{padding:10px;border-radius:10px;border:0;background:var(--accent);color:#fff;font-weight:700}
+
+    footer{margin-top:34px;padding:22px 0;color:var(--muted);font-size:14px;text-align:center}
+
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}nav ul{display:none}}
+    @media(max-width:560px){.grid{grid-template-columns:1fr}.brand h1{font-size:16px}}
+
+    /* owner edit notice */
+    .owner-note{font-size:13px;color:var(--muted);padding:10px;background:#fff;border-radius:8px;margin-top:10px}
+  </style>
+</head>
+<body>
+  <!--
+    IMPORTANT: To make the contact form work, sign up at https://formspree.io/ and replace FORM_ACTION_URL below
+    with your Formspree form action (e.g. https://formspree.io/f/abcdxyza). You do not need to show your email on the page.
+
+    To change images: drop new image files into the /images folder (banner.jpg, dept-*.jpg, gallery-1.jpg ...)
+    or edit the IMAGES map inside the <script id="images-config"> block toward the end of this file.
+  -->
+
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="images/banner-logo.png" alt="Hawelti Axum Polytechnic College logo" id="site-logo">
+        <div>
+          <h1>Hawelti Axum Polytechnic College</h1>
+          <div class="muted">Skill-, Knowledge-, and Attitude-Based TVET — Axum, Ethiopia</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#departments">Departments</a></li>
+          <li><a href="#programs">Short-Term Programs</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn" href="#admissions">Apply Now</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <h2>Welcome to Hawelti Axum Polytechnic College</h2>
+        <p class="muted">We provide practical, hands-on technical education and vocational training to prepare students for the workplace and entrepreneurship. Programs are delivered across five formal levels and through short-term partner projects with NGOs and local communities.</p>
+        <div style="margin-top:12px">
+          <strong>Phone:</strong> +251-347-75-25-97 &nbsp; | &nbsp; +251-342-75-24-12
+        </div>
+        <div class="owner-note">Owner-only editable items (images and departmental text) can be changed by editing the IMAGES and DEPARTMENTS objects at the end of this file or by replacing image files in the <code>/images</code> folder.</div>
+      </div>
+
+      <aside class="card" style="padding:18px">
+        <h3>Quick Links</h3>
+        <ul style="padding-left:18px;margin-top:10px;color:var(--muted)">
+          <li><a href="#departments">Departments & Programs</a></li>
+          <li><a href="#programs">Short-Term Programs & Partners</a></li>
+          <li><a href="https://www.google.com/maps/search/Hawelti+Axum+Polytechnic+College" target="_blank">Find us on Google Maps</a></li>
+          <li><a href="#contact">Contact Admissions</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="about" class="card" style="margin-top:18px">
+      <h2>About the College</h2>
+      <p class="muted">Hawelti Axum Polytechnic College is committed to delivering high-quality TVET (Technical and Vocational Education and Training). Our curriculum is industry-aligned, our instructors are experienced practitioners, and we focus on practical skills, entrepreneurship, and community development.</p>
+    </section>
+
+    <section id="departments" class="card" style="margin-top:18px">
+      <h2>Departments (13)</h2>
+      <div class="departments" id="departments-list">
+        <!-- departments are rendered by JavaScript so owner can edit the DEPARTMENTS object below -->
+      </div>
+    </section>
+
+    <section id="programs" class="card" style="margin-top:18px">
+      <h2>Short-Term Programs & Partnerships</h2>
+      <p class="muted">We run short-term and modular programs in partnership with NGOs, city administration, and local communities. Example offerings include:</p>
+      <ul class="muted">
+        <li>Solar PV installation & maintenance (partner: local NGOs)</li>
+        <li>Basic ICT and digital skills for youth (partner: city administration)</li>
+        <li>Small-scale irrigation & community farming techniques (partners: community groups)</li>
+        <li>Entrepreneurship bootcamps & business clinics (partners: incubation hubs)</li>
+      </ul>
+    </section>
+
+    <section id="gallery" class="card" style="margin-top:18px">
+      <h2>Campus Gallery</h2>
+      <div class="gallery" id="gallery-grid">
+        <!-- gallery images inserted by JS; replace files in /images to update -->
+      </div>
+    </section>
+
+    <section id="contact" class="card" style="margin-top:18px">
+      <h2>Contact Us</h2>
+      <p class="muted">Address: Hawelti, Axum, Tigray, Ethiopia</p>
+      <div class="contact">
+        <div>
+          <!-- Formspree integration: replace FORM_ACTION_URL with your form action from Formspree -->
+          <form id="contact-form" action="https://formspree.io/f/yourFormID" method="POST">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" placeholder="Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+            <div id="form-msg" class="muted" style="margin-top:8px"></div>
+          </form>
+        </div>
+        <div>
+          <h3>Telephone</h3>
+          <p class="muted">+251-347-75-25-97<br>+251-342-75-24-12</p>
+
+          <h3>Find us</h3>
+          <p><a class="btn" href="https://www.google.com/maps/search/Hawelti+Axum+Polytechnic+College" target="_blank">Open Google Maps</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© 2025 Hawelti Axum Polytechnic College</div>
+        <div class="muted">Designed for teaching, learning and entrepreneurship.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script id="images-config">
+    // === IMAGES & DEPARTMENTS CONFIG ===
+    // You can edit the file names below to point to new images in /images (or change paths to external URLs).
+    const IMAGES = {
+      logo: 'images/banner-logo.png',
+      banner: 'images/banner.jpg',
+      gallery: [ 'images/gallery-1.jpg', 'images/gallery-2.jpg', 'images/gallery-3.jpg' ],
+      dept: {
+        'Automotive Mechanic': 'images/dept-automotive.jpg',
+        'Building Electrical Installation': 'images/dept-electrical.jpg',
+        'Structural Construction Work': 'images/dept-structural.jpg',
+        'Drafting Technology': 'images/dept-drafting.jpg',
+        'Industrial Electrical/Electronic Control Technology': 'images/dept-industrial-electrical.jpg',
+        'Garment Production': 'images/dept-garment.jpg',
+        'Information Technology': 'images/dept-it.jpg',
+        'Machining': 'images/dept-machining.jpg',
+        'Mechanics': 'images/dept-mechanics.jpg',
+        'Plumbing Installation': 'images/dept-plumbing.jpg',
+        'Survey Technology': 'images/dept-survey.jpg',
+        'Wood Work Technology': 'images/dept-wood.jpg',
+        'Mining Technology': 'images/dept-mining.jpg'
+      }
+    };
+
+    const DEPARTMENTS = [
+      { name: 'Automotive Mechanic', levels: 'Level 1 — Level 4', desc: 'Automotive diagnostics, engine repair, and service management.' },
+      { name: 'Building Electrical Installation', levels: 'Level 1 — Level 5', desc: 'Wiring, distribution, and building electrical systems.' },
+      { name: 'Structural Construction Work', levels: 'Level 1 — Level 4', desc: 'Masonry, site supervision, and concrete work.' },
+      { name: 'Drafting Technology', levels: 'Level 1 — Level 4', desc: 'Technical drawing, CAD, and shop drawings.' },
+      { name: 'Industrial Electrical/Electronic Control Technology', levels: 'Level 1 — Level 4', desc: 'Industrial control, PLCs, and electronics.' },
+      { name: 'Garment Production', levels: 'Level 1 — Level 4', desc: 'Sewing, cutting, pattern making, and production management.' },
+      { name: 'Information Technology', levels: 'Level 1 — Level 4', desc: 'Basic ICT, networking, and maintenance.' },
+      { name: 'Machining', levels: 'Level 1 — Level 4', desc: 'Lathe work, milling, and precision machining.' },
+      { name: 'Mechanics', levels: 'Level 1 — Level 4', desc: 'General mechanical systems and maintenance.' },
+      { name: 'Plumbing Installation', levels: 'Level 1 — Level 4', desc: 'Sanitary systems, pipework and installation.' },
+      { name: 'Survey Technology', levels: 'Level 1 — Level 4', desc: 'Land surveying, instruments, and site layout.' },
+      { name: 'Wood Work Technology', levels: 'Level 1 — Level 4', desc: 'Carpentry, joinery, and furniture making.' },
+      { name: 'Mining Technology', levels: 'Level 1 — Level 4', desc: 'Basic mining operations and safety.' }
+    ];
+  </script>
+
+  <script>
+    // render site logo (fallback if file missing)
+    (function(){
+      const cfg = window.IMAGES;
+      const logo = document.getElementById('site-logo');
+      if(logo && cfg && cfg.logo) logo.src = cfg.logo;
+
+      // render departments
+      const container = document.getElementById('departments-list');
+      DEPARTMENTS.forEach(d => {
+        const imgSrc = (IMAGES.dept[d.name] || 'images/dept-placeholder.jpg');
+        const el = document.createElement('div'); el.className = 'dept';
+        el.innerHTML = `<img src="${imgSrc}" alt="${d.name}"><div><h3 style="margin:0">${d.name}</h3><div class=\"meta\">${d.levels}<br><span class=\"muted\">${d.desc}</span></div></div>`;
+        container.appendChild(el);
+      });
+
+      // render gallery
+      const gallery = document.getElementById('gallery-grid');
+      IMAGES.gallery.forEach(src => {
+        const img = document.createElement('img'); img.src = src; img.alt = 'Campus photo';
+        gallery.appendChild(img);
+      });
+
+      // contact form handler (simple UX)
+      const form = document.getElementById('contact-form');
+      const formMsg = document.getElementById('form-msg');
+      form.addEventListener('submit', function(e){
+        // let Formspree handle sending; show friendly message after submission
+        setTimeout(()=>{ formMsg.textContent = 'If the form was successfully sent, you will receive a confirmation from the form service. Thank you.'; }, 600);
+      });
+
+    })();
+  </script>
+</body>
+</html>
